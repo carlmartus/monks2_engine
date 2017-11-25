@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Monks 2 engine</title>
+
+	<style>
+body {
+	background-color: #222;
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+#bookInfoBox {
+	width: 640px;
+	height: 115px;
+	background-image: url('infobox.png');
+	margin: 0px;
+	padding: 0px;
+}
+
+#bookInfoText {
+	margin: 0px;
+	padding: 24px;
+	font-family: medi, arial;
+	color: black;
+	font-size: 18px;
+}
+
+#bookInfoImgSpeech {
+	margin: 12px;
+	width: 64px;
+	height: 64px;
+	background-image: url('infospeech.png');
+	float: left;
+}
+
+#bookInfoImgNotice {
+	margin: 12px;
+	width: 64px;
+	height: 64px;
+	background-image: url('infonotice.png');
+	float: left;
+}
+
+@font-face {
+	font-family: medi;
+	src: url('chantelli.ttf');
+}
+	</style>
+</head>
+
+<body onload="main();">
+	<center>
+		<canvas id="bookCanvas" width="640" height="480"></canvas>
+		<div id="bookInfoBox">
+			<div id="bookInfoImgNotice">&nbsp;</div>
+			<div id="bookInfoImgSpeech">&nbsp;</div>
+			<div id="bookInfoText">&nbsp;</div>
+		</div>
+	</center>
+
+	<script src="rapidframe.js"></script>
+	<script src="rapidframe.js"></script>
+</body>
+
+</html>

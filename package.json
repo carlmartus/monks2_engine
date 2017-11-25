@@ -1,0 +1,26 @@
+{
+  "name": "Monks 2 engine",
+  "version": "0.0.1",
+  "description": "Code is based on Monks: The age of reason",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlmartus/monks2_engine.git"
+  },
+  "keywords": [
+    "monks",
+    "game engine",
+    "javascript"
+  ],
+  "author": "Martin Sandgren",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlmartus/monks2_engine/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-js-inline": "0.0.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
