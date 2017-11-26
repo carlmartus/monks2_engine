@@ -63,7 +63,9 @@ function downloaded() {
 }
 
 function main() {
-	gl = esInitGl('bookCanvas', { antialias: false });
+	rf = new rfGame('canvas');
+	gl = rf.setupWebGl({antialias: false});
+
 	gl.enable(gl.DEPTH_TEST);
 	gl.enable(gl.CULL_FACE);
 	//gl.enable(gl.VERTEX_PROGRAM_POINT_SIZE);
@@ -79,7 +81,7 @@ function main() {
 	listenMouse();
 	lockMouse();
 
-	mvp = esMat4_create();
+	mvp = rfMat4_create();
 
 	window.onfocus = function() {
 		blockRender = false;
