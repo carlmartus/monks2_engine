@@ -1,0 +1,9 @@
+{
+	"scenes_start": "intro",
+	"scenes": {
+		"intro": {
+			"type": "map",
+			"file": "intro"
+		}
+	}
+}
