@@ -1,4 +1,5 @@
 node_modules/
 www/book.js
 www/game.js
+www/game.json
 gen/
