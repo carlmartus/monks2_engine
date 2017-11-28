@@ -1,9 +1,13 @@
 {
+	"sheet_meta": "sheet.json",
+
+	"tiled_tileset": "maps/tileset.tsx",
+
 	"scenes_start": "intro",
 	"scenes": {
 		"intro": {
 			"type": "map",
-			"file": "intro"
+			"file": "maps/into.tmx"
 		}
 	}
 }

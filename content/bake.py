@@ -1,4 +1,4 @@
-import sys, json, re
+import sys, json, re, xmltodict
 from glob import glob
 from colorama import Fore, Style, init as colorama_init
 
@@ -35,13 +35,17 @@ def main():
     #print(sheet)
 
     # Read game script
-    game_json = json.loads(read_file(dirRead, "script.json"))
-    game_json = json.dumps(game_json, indent=4)
+    game_json = json.loads(read_file(dirRead, 'script.json'))
+    game_json_str = json.dumps(game_json, indent=4)
 
-    game_json_js = 'GAME = %s' % game_json
+    game_json_js = 'GAME = %s' % game_json_str
+
+    # Read tileset
+    tileset = xmltodict.parse((read_file(dirRead, game_json['tiled_tileset'])))
+    print(tileset)
 
     # Write
-    write_file(dirWrite, 'game.json', game_json)
+    write_file(dirWrite, 'game.json', game_json_str)
     write_file(dirWrite, 'game.js', game_json_js)
     print(Fore.GREEN + 'Baking done!' + Style.RESET_ALL)
 
